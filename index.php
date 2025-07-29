@@ -87,7 +87,7 @@
     </div>
     <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);">
         <div class="container">
-            <div class="position-relative rounded-pill w-100 mx-auto p-5" style="background: rgba(53, 104, 45, 0.8);">
+            <div class="position-relative rounded-pill w-100 mx-auto p-5" style="background: rgba(49, 45, 104, 0);">
                 <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Search destinations, hotels, or services...">
                 <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute me-2" style="top: 50%; right: 46px; transform: translateY(-50%);">Search</button>
             </div>
