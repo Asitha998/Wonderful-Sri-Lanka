@@ -1,4 +1,4 @@
-<div class="container-fluid subscribe py-5">
+<!-- <div class="container-fluid subscribe py-5">
         <div class="container text-center py-5">
             <div class="mx-auto text-center" style="max-width: 900px;">
                 <h5 class="subscribe-title px-3">Subscribe</h5>
@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container-fluid footer py-5">
         <div class="container py-5">
