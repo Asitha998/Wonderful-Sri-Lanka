@@ -1,0 +1,274 @@
+/* Auth Page Specific Styles */
+/* Define CSS variables for dynamic height calculation */
+:root {
+    --header-height: 0px;
+    --footer-height: 0px;
+}
+
+body {
+    background-color: var(--bs-light); /* Light background for the overall page */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Remove default body margin */
+}
+
+/* Ensure header and footer don't take up space from the main content area */
+.topbar, .navbar, .copyright {
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Basic page structure overrides */
+.navbar-light .navbar-nav .nav-link {
+    color: var(--bs-dark) !important;
+}
+.sticky-top.navbar-light {
+    background: var(--bs-light);
+}
+.navbar-light .navbar-brand h1 {
+    color: var(--bs-primary);
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--bs-primary) !important;
+}
+.navbar-light .navbar-nav .nav-link::before {
+    background: var(--bs-primary);
+}
+.topbar {
+    background: var(--bs-primary) !important;
+    width: 100%;
+}
+.footer {
+    width: 100%;
+    background: var(--bs-primary) !important;
+    color: var(--bs-white);
+    padding: 20px 0;
+    text-align: center;
+}
+.footer a {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+.footer a:hover {
+    color: var(--bs-secondary);
+}
+.copyright {
+    background: var(--bs-primary) !important;
+}
+
+.auth-page-wrapper {
+    flex-grow: 1; /* Takes all available space between header and footer */
+    display: flex;
+    position: relative; /* For absolute positioning of inner panels */
+    height: calc(100vh - var(--header-height) - var(--footer-height)); /* Calculate height dynamically */
+}
+
+.auth-panel {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: transform 0.6s ease-in-out; /* Smooth transition for panel movement */
+}
+
+.auth-image-panel {
+    left: 0; /* Starts on the left */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.6s ease-in-out, transform 0.6s ease-in-out; /* Image change and panel move */
+}
+
+.auth-form-panel-wrapper {
+    left: 50%; /* Starts on the right */
+    background-color: var(--bs-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative; /* Needed for absolute positioning of child forms */
+    overflow: hidden; /* Hide forms when they slide out */
+    transition: transform 0.6s ease-in-out; /* Smooth transition for panel movement */
+}
+
+/* State for Signup: Image panel moves right, Form panel moves left */
+.auth-page-wrapper.signup-active .auth-image-panel {
+    transform: translateX(100%);
+}
+
+.auth-page-wrapper.signup-active .auth-form-panel-wrapper {
+    transform: translateX(-100%);
+}
+
+/* State for forms when signup is active */
+.auth-page-wrapper.signup-active #loginFormSection {
+    left: -100%; /* Move login form off-screen to the left */
+}
+
+.auth-page-wrapper.signup-active #signupFormSection {
+    left: 0; /* Move signup form into view */
+}
+
+/* Individual form sections within the form panel */
+.auth-form-section {
+    width: 100%; /* Each form takes full width of its parent panel */
+    height: 100%;
+    position: absolute; /* Position forms absolutely within the wrapper */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px; /* Add padding to the form section itself */
+    transition: left 0.6s ease-in-out; /* Smooth sliding animation for forms */
+}
+
+#loginFormSection {
+    left: 0; /* Login form starts visible */
+}
+
+#signupFormSection {
+    left: 100%; /* Signup form starts off-screen to the right */
+}
+
+.auth-form-section h2 {
+    color: var(--bs-primary);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Auth form specific styles */
+.auth-form-section .form-control {
+    border-radius: 8px;
+    border-color: var(--bs-secondary);
+    padding: 12px 15px;
+    width: 100%;
+}
+
+.auth-form-section .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(53, 104, 45, 0.25);
+    border-color: var(--bs-primary);
+}
+
+.auth-form-section .btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.auth-form-section .btn-primary:hover {
+    background-color: #2a5324; /* Slightly darker green */
+    border-color: #2a5324;
+}
+
+.toggle-link {
+    color: var(--bs-primary);
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 20px;
+    display: block;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
+
+.auth-form-section .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.auth-form-section form {
+    width: 100%; /* Ensure form takes full width of its section */
+    max-width: 350px; /* Max width for the form elements */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .auth-page-wrapper {
+        flex-direction: column; /* Stack vertically */
+        height: auto; /* Allow height to be determined by content */
+    }
+    .auth-panel {
+        position: relative; /* Remove absolute positioning for stacking */
+        width: 100%;
+        height: auto; /* Allow height to be determined by content */
+        transform: none !important; /* Override transform for mobile */
+    }
+    .auth-image-panel {
+        min-height: 200px; /* Ensure image is visible */
+    }
+    .auth-form-panel-wrapper {
+        min-height: 400px; /* Ensure form has enough space */
+        padding: 30px 20px;
+    }
+    .auth-form-section {
+        position: relative; /* Reset to relative for stacking */
+        left: 0 !important; /* Ensure forms are not offset */
+        padding: 0; /* Remove padding as wrapper has it */
+    }
+    #signupFormSection {
+        display: none; /* Hide signup by default on mobile */
+    }
+    .auth-page-wrapper.signup-active #loginFormSection {
+        display: none; /* Hide login when signup is active on mobile */
+    }
+    .auth-page-wrapper.signup-active #signupFormSection {
+        display: flex; /* Show signup when active on mobile */
+    }
+}
+
+.google-auth-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+    padding: 0 10px;
+    color: #777;
+    font-size: 14px;
+}
+
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    color: #757575;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-google:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-google i {
+    font-size: 18px;
+    margin-right: 10px;
+}
