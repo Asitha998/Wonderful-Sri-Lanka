@@ -24,7 +24,7 @@
     <link href="css/style.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/35682D/FFFFFF?text=Admin+Login+Background') center center no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/kandy.jpg') center center no-repeat;
             background-size: cover;
             min-height: 100vh;
             display: flex;

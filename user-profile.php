@@ -103,7 +103,7 @@
         <?php include 'components/header.php'; ?>
     </div>
 
-    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x600/35682D/FFFFFF?text=User+Profile') center center no-repeat; background-size: cover;">
+    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/gallefort.jpg') center center no-repeat; background-size: cover;">
         <div class="container text-center py-5" style="max-width: 900px;">
             <h3 class="text-white display-3 mb-4">User Profile</h3>
             <p class="text-white mb-0">Manage your travel experiences with Wonderful Sri Lanka.</p>
