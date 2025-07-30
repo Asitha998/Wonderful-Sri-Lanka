@@ -40,7 +40,7 @@
                         <a href=""><i class="fas fa-angle-right me-2"></i> Blog</a>
                         <a href=""><i class="fas fa-angle-right me-2"></i> Press</a>
                         <a href=""><i class="fas fa-angle-right me-2"></i> Gift Cards</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Magazine</a>
+                        <a href="admin-login.php"><i class="fas fa-angle-right me-2"></i> Admin Login</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
