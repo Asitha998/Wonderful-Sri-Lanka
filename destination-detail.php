@@ -144,13 +144,13 @@
         'sigiriya' => [
             'name' => 'Sigiriya Rock Fortress',
             'subtitle' => 'Historic Landmark & Architectural Marvel',
-            'hero_image' => 'https://placehold.co/1920x500/35682D/FFFFFF?text=Sigiriya+Hero',
+            'hero_image' => 'img/home/sigiriya.jpg',
             'description' => 'Sigiriya, also known as Lion Rock, is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka. It is a site of historical and archaeological significance that is dominated by a massive column of rock nearly 200 metres (660 ft) high. According to the ancient Sri Lankan chronicle the Culavamsa, this site was selected by King Kasyapa (477 – 495 CE) for his new capital. He built his palace on the top of this rock and decorated its sides with colourful frescoes. On a small plateau about halfway up the side of the rock he built a gateway in the form of an enormous lion. The name of this place is derived from this structure — Sīhāgiri, the Lion Rock. The capital and the royal palace were abandoned after the king\'s death. It was used as a Buddhist monastery until the 14th century.',
             'gallery_images' => [
-                'https://placehold.co/600x400/84A98C/FFFFFF?text=Sigiriya+Gallery+1',
-                'https://placehold.co/600x400/35682D/FFFFFF?text=Sigiriya+Gallery+2',
-                'https://placehold.co/600x400/84A98C/FFFFFF?text=Sigiriya+Gallery+3',
-                'https://placehold.co/600x400/35682D/FFFFFF?text=Sigiriya+Gallery+4'
+                'img/home/sigiria.jpg',
+                'img/home/sigiriya2.jpg',
+                'img/home/Sigiriya3.jpg',
+                'img/home/sigiriya4.jpg'
             ],
             'map_embed' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.054048740523!2d80.75940731477755!3d7.957077992160938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4a91936c31139%3A0x1d4364020a59b66a!2sSigiriya!5e0!3m2!1sen!2slk!4v1678901234567!5m2!1sen!2slk" allowfullscreen="" loading="lazy"></iframe>',
             'rating' => 4.8,
@@ -196,9 +196,9 @@
         'ella' => ['name' => 'Ella', 'image' => 'https://placehold.co/600x400/35682D/FFFFFF?text=Ella'],
         'galle-fort' => ['name' => 'Galle Fort', 'image' => 'https://placehold.co/600x400/84A98C/FFFFFF?text=Galle+Fort'],
         'nuwara-eliya' => ['name' => 'Nuwara Eliya', 'image' => 'https://placehold.co/600x400/35682D/FFFFFF?text=Nuwara+Eliya'],
-        'kandy' => ['name' => 'Kandy', 'image' => 'https://placehold.co/600x400/84A98C/FFFFFF?text=Kandy'],
-        'dambulla' => ['name' => 'Dambulla', 'image' => 'https://placehold.co/600x400/35682D/FFFFFF?text=Dambulla'],
-        'polonnaruwa' => ['name' => 'Polonnaruwa', 'image' => 'https://placehold.co/600x400/84A98C/FFFFFF?text=Polonnaruwa'],
+        'kandy' => ['name' => 'Kandy', 'image' => 'img/home/kandy.jpg'],
+        'dambulla' => ['name' => 'Dambulla', 'image' => 'img/home/dambulla.jpg'],
+        'polonnaruwa' => ['name' => 'Polonnaruwa', 'image' => 'img/home/polonnaruwa.jpg'],
         'haputale' => ['name' => 'Haputale', 'image' => 'https://placehold.co/600x400/35682D/FFFFFF?text=Haputale']
     ];
     ?>

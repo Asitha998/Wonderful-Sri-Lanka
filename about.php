@@ -38,7 +38,7 @@
         <?php include 'components/header.php'; ?>
     </div>
 
-    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x600/35682D/FFFFFF?text=Sri+Lanka+Scenery') center center no-repeat; background-size: cover;">
+    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/jaffna.jpg') center center no-repeat; background-size: cover;">
         <div class="container text-center py-5" style="max-width: 900px;">
             <h3 class="text-white display-3 mb-4">About Wonderful Sri Lanka</h3>
             <p class="text-white mb-0">Our mission to connect travelers with the wonders of our island.</p>
@@ -50,11 +50,11 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5">
-                    <div class="h-100" style="border: 50px solid; border-color: transparent var(--bs-primary) transparent var(--bs-primary);">
-                        <img src="https://placehold.co/600x400/84A98C/FFFFFF?text=About+Image" class="img-fluid w-100 h-100" alt="About Image">
+                    <div class="h-100">
+                        <img src="img/home/Tangalle.jpg" class="img-fluid w-100 h-100" alt="About Image">
                     </div>
                 </div>
-                <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(https://placehold.co/600x400/F0F2F5/000000?text=Background+Pattern);">
+                <div class="col-lg-7">
                     <h5 class="section-title px-3">About Us</h5>
                     <h1 class="mb-4">Welcome to <span class="text-primary">Wonderful Sri Lanka</span></h1>
                     <p class="mb-4">
@@ -101,7 +101,7 @@
                         </div>
                         <h4 class="mb-3 text-primary">Our Mission</h4>
                         <p class="mb-0">
-                            To promote sustainable and enjoyable tourism in Sri Lanka by offering access to essential services, authentic experiences, and local knowledge.
+                            contribute to the development of the tourism industry and the building of the country's economy.
                         </p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                         </div>
                         <h4 class="mb-3 text-primary">Our Vision</h4>
                         <p class="mb-0">
-                            To become the most trusted tourism gateway for discovering the hidden gems of Sri Lanka.
+                            By adding a new face to the tourism industry in our country and turning it into a tourist paradise, Sri Lanka's name will shine in the world
                         </p>
                     </div>
                 </div>

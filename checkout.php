@@ -90,7 +90,7 @@
         <?php include 'components/header.php'; ?>
     </div>
 
-    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x600/35682D/FFFFFF?text=Checkout') center center no-repeat; background-size: cover;">
+    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/kandy.jpg') center center no-repeat; background-size: cover;">
         <div class="container text-center py-5" style="max-width: 900px;">
             <h3 class="text-white display-3 mb-4">Confirm Your Booking</h3>
             <p class="text-white mb-0">Review your selections and proceed to payment</p>

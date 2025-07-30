@@ -238,7 +238,7 @@
         <?php include 'components/header.php'; ?>
     </div>
 
-    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x600/35682D/FFFFFF?text=Book+Your+Journey') center center no-repeat; background-size: cover;">
+    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/nuwaraeliya.jpg') center center no-repeat; background-size: cover;">
         <div class="container text-center py-5" style="max-width: 900px;">
             <h3 class="text-white display-3 mb-4">Book Your Travel Experience</h3>
             <p class="text-white mb-0">Customize your journey by choosing from our top guides, stays, and rides</p>

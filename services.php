@@ -38,7 +38,7 @@
         <?php include 'components/header.php'; ?>
     </div>
 
-    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x600/35682D/FFFFFF?text=Our+Services') center center no-repeat; background-size: cover;">
+    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/tuktuk.jpg') center center no-repeat; background-size: cover;">
         <div class="container text-center py-5" style="max-width: 900px;">
             <h3 class="text-white display-3 mb-4">Explore Our Services</h3>
             <p class="text-white mb-0">Access trusted services to enhance your journey across Sri Lanka.</p>
@@ -53,7 +53,7 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded text-center p-4">
+                    <div class="service-item bg-light rounded text-center p-4" style="background: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.5)), url('img/home/gaide.jpg') center center no-repeat; background-size: cover;">
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-users fa-2x"></i>
                         </div>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded text-center p-4">
+                    <div class="service-item bg-light rounded text-center p-4" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/vehicalser.jpg') center center no-repeat; background-size: cover;">
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-car fa-2x"></i>
                         </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded text-center p-4">
+                    <div class="service-item bg-light rounded text-center p-4" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/kabana.jpg') center center no-repeat; background-size: cover;">
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-hotel fa-2x"></i>
                         </div>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded text-center p-4">
+                    <div class="service-item bg-light rounded text-center p-4" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/Attractions.jpg') center center no-repeat; background-size: cover;">
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-mountain fa-2x"></i>
                         </div>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded text-center p-4">
+                    <div class="service-item bg-light rounded text-center p-4" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/foodser.jpg') center center no-repeat; background-size: cover;">
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-utensils fa-2x"></i>
                         </div>
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded text-center p-4">
+                    <div class="service-item bg-light rounded text-center p-4" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/travalagant.jpg') center center no-repeat; background-size: cover;">
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-suitcase-rolling fa-2x"></i>
                         </div>

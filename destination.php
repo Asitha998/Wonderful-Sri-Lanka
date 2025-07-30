@@ -38,7 +38,7 @@
             <?php include 'components/header.php'; ?>
         </div>
 
-        <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x600/35682D/FFFFFF?text=Sri+Lanka+Mountains+Beach') center center no-repeat; background-size: cover;">
+        <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home/desti.jpg') center center no-repeat; background-size: cover;">
             <div class="container text-center py-5" style="max-width: 900px;">
                 <h3 class="text-white display-3 mb-4">Explore Sri Lanka</h3> 
                 <p class="text-white mb-0">Browse destinations, discover history, nature, and coastal wonders</p>
@@ -76,7 +76,7 @@
                             <div class="row g-4" id="destination-cards-container">
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Sigiriya" alt="Sigiriya">
+                                        <img class="img-fluid rounded w-100" src="img/home/sigiria.jpg" alt="Sigiriya">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=sigiriya" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Sigiriya</h4>
@@ -86,7 +86,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Galle+Fort" alt="Galle Fort">
+                                        <img class="img-fluid rounded w-100" src="img/home/gallefort.jpg" alt="Galle Fort">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=galle-fort" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Galle Fort</h4>
@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Ella" alt="Ella">
+                                        <img class="img-fluid rounded w-100" src="img/home/ella.jpg" alt="Ella">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=ella" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Ella</h4>
@@ -106,7 +106,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Nuwara+Eliya" alt="Nuwara Eliya">
+                                        <img class="img-fluid rounded w-100" src="img/home/nuwaraeliya.jpg" alt="Nuwara Eliya">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=nuwara-eliya" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Nuwara Eliya</h4>
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Kandy" alt="Kandy">
+                                        <img class="img-fluid rounded w-100" src="img/home/kandy.jpg" alt="Kandy">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=kandy" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Kandy</h4>
@@ -126,7 +126,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Mirissa" alt="Mirissa">
+                                        <img class="img-fluid rounded w-100" src="img/home/mirissa.jpg" alt="Mirissa">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=mirissa" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Mirissa</h4>
@@ -136,7 +136,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Yala+National+Park" alt="Yala National Park">
+                                        <img class="img-fluid rounded w-100" src="img/home/yala.jpg" alt="Yala National Park">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=yala" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Yala National Park</h4>
@@ -146,7 +146,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Anuradhapura" alt="Anuradhapura">
+                                        <img class="img-fluid rounded w-100" src="img/home/anuradhapura.jpg" alt="Anuradhapura">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=anuradhapura" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Anuradhapura</h4>
@@ -156,7 +156,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Polonnaruwa" alt="Polonnaruwa">
+                                        <img class="img-fluid rounded w-100" src="img/home/gallefort.jpg" alt="Polonnaruwa">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=polonnaruwa" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Polonnaruwa</h4>
@@ -166,7 +166,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Jaffna" alt="Jaffna">
+                                        <img class="img-fluid rounded w-100" src="img/home/jaffna.jpg" alt="Jaffna">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=jaffna" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Jaffna</h4>
@@ -176,7 +176,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Trincomalee" alt="Trincomalee">
+                                        <img class="img-fluid rounded w-100" src="img/home/Trinkomali.jpg" alt="Trincomalee">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=trincomalee" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Trincomalee</h4>
@@ -186,7 +186,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Adams+Peak" alt="Adam's Peak">
+                                        <img class="img-fluid rounded w-100" src="img/home/adampeak.jpg" alt="Adam's Peak">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=adams-peak" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Adam's Peak</h4>
@@ -196,7 +196,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Dambulla" alt="Dambulla Cave Temple">
+                                        <img class="img-fluid rounded w-100" src="img/home/dambulla.jpg" alt="Dambulla Cave Temple">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=dambulla" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Dambulla Cave Temple</h4>
@@ -206,7 +206,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Ritigala" alt="Ritigala">
+                                        <img class="img-fluid rounded w-100" src="img/home/Ritigala.jpg" alt="Ritigala">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=ritigala" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Ritigala</h4>
@@ -216,7 +216,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Haputale" alt="Haputale">
+                                        <img class="img-fluid rounded w-100" src="img/home/haputhale.jpg" alt="Haputale">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=haputale" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Haputale</h4>
@@ -226,7 +226,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Udawalawe" alt="Udawalawe National Park">
+                                        <img class="img-fluid rounded w-100" src="img/home/udawalawe.jpg" alt="Udawalawe National Park">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=udawalawe" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Udawalawe National Park</h4>
@@ -236,7 +236,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Bentota" alt="Bentota">
+                                        <img class="img-fluid rounded w-100" src="img/home/bentota.jpg" alt="Bentota">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=bentota" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Bentota</h4>
@@ -246,7 +246,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 destination-card">
                                     <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Arugam+Bay" alt="Arugam Bay">
+                                        <img class="img-fluid rounded w-100" src="img/home/arugambayjpg.jpg" alt="Arugam Bay">
                                         <div class="destination-overlay p-4">
                                             <a href="destination-detail.php?id=arugam-bay" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                             <h4 class="text-white mb-2 mt-3">Arugam Bay</h4>
