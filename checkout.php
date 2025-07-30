@@ -207,8 +207,6 @@
 
     <?php include 'components/footer.php'; ?>
 
-    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
-
     <!-- Payment Status Modal -->
     <div class="modal fade" id="paymentStatusModal" tabindex="-1" aria-labelledby="paymentStatusModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
