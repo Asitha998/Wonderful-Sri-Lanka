@@ -47,7 +47,7 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img src="https://placehold.co/1920x1080/35682D/FFFFFF?text=Sri+Lanka+Scenic+1" class="img-fluid" alt="Image">
+                        <img src="img/home/Sigiriya.jpg" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="p-3" style="max-width: 900px;">
                                 <h1 class="display-2 text-capitalize text-white mb-4">Discover the Beauty of Sri Lanka</h1>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://placehold.co/1920x1080/84A98C/FFFFFF?text=Sri+Lanka+Scenic+2" class="img-fluid" alt="Image">
+                        <img src="img/home/eliphant.jpg" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="p-3" style="max-width: 900px;">
                                 <h1 class="display-2 text-capitalize text-white mb-4">Explore Hidden Gems</h1>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://placehold.co/1920x1080/35682D/FFFFFF?text=Sri+Lanka+Scenic+3" class="img-fluid" alt="Image">
+                        <img src="img/home/faddy.jpg" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="p-3" style="max-width: 900px;">
                                 <h1 class="display-2 text-capitalize text-white mb-4">Book Trusted Services</h1>
@@ -74,22 +74,15 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                
             </div>
         </div>
     </div>
     <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);">
         <div class="container">
-            <div class="position-relative rounded-pill w-100 mx-auto p-5" style="background: rgba(49, 45, 104, 0);">
+            <div class="position-relative rounded-pill mx-auto p-1" style="background: rgb(24, 71, 44);">
                 <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Search destinations, hotels, or services...">
-                <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute me-2" style="top: 50%; right: 46px; transform: translateY(-50%);">Search</button>
+                <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute me-2" style="top: 50%; right: 5px; transform: translateY(-50%);">Search</button>
             </div>
         </div>
     </div>
@@ -98,11 +91,11 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5">
-                    <div class="h-100" style="border: 50px solid; border-color: transparent var(--bs-primary) transparent var(--bs-primary);">
-                        <img src="https://placehold.co/600x400/84A98C/FFFFFF?text=About+Sri+Lanka" class="img-fluid w-100 h-100" alt="">
+                    <div class="h-100" style="background: url('img/home/sigiria.jpg') center center no-repeat; background-size: cover; border-radius: 25px;">
+                        <img src="img/home/sigiria.jpg" class="img-fluid w-100 h-100" alt="">
                     </div>
                 </div>
-                <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
+                <div class="col-lg-7">
                     <h5 class="section-about-title pe-3">About Us</h5>
                     <h1 class="mb-4">Welcome to <span class="text-primary">Wonderful Sri Lanka</span></h1>
                     <p class="mb-4">Sri Lanka, often called the "Pearl of the Indian Ocean," is a land of incredible diversity, from ancient ruins and lush tea plantations to pristine beaches and vibrant wildlife. Our platform is dedicated to showcasing the best of this island paradise.</p>
@@ -127,7 +120,7 @@
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Secure Bookings</p>
                         </div>
                     </div>
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+                    <a class="btn btn-outline-dark rounded-pill py-3 px-5 mt-2" href="">Read More</a>
                 </div>
             </div>
         </div>
@@ -241,20 +234,20 @@
                                 <div class="row g-4">
                                     <div class="col-lg-6">
                                         <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Sigiriya" alt="Sigiriya Rock Fortress">
+                                            <img class="img-fluid rounded w-100" src="img/home/sigiria.jpg" alt="Sigiriya Rock Fortress">
                                             <div class="destination-overlay p-4">
                                                 <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                                 <h4 class="text-white mb-2 mt-3">Sigiriya</h4>
                                                 <a href="#" class="btn-hover text-white">Explore <i class="fa fa-arrow-right ms-2"></i></a>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="https://placehold.co/600x400/84A98C/FFFFFF?text=Sigiriya" data-lightbox="destination-1"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                <a href="img/home/gallefort.jpg" data-lightbox="destination-1"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Galle+Fort" alt="Galle Fort">
+                                            <img class="img-fluid rounded w-100" src="img/home/gallefort.jpg" alt="Galle Fort">
                                             <div class="destination-overlay p-4">
                                                 <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                                 <h4 class="text-white mb-2 mt-3">Galle Fort</h4>
@@ -267,7 +260,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Ella" alt="Ella">
+                                            <img class="img-fluid rounded w-100" src="img/home/ella.jpg" alt="Ella">
                                             <div class="destination-overlay p-4">
                                                 <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                                 <h4 class="text-white mb-2 mt-3">Ella</h4>
@@ -280,7 +273,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Nuwara+Eliya" alt="Nuwara Eliya">
+                                            <img class="img-fluid rounded w-100" src="img/home/nuwaraeliya.jpg" alt="Nuwara Eliya">
                                             <div class="destination-overlay p-4">
                                                 <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                                 <h4 class="text-white mb-2 mt-3">Nuwara Eliya</h4>
@@ -295,7 +288,7 @@
                             </div>
                             <div class="col-xl-4">
                                 <div class="destination-img h-100">
-                                    <img class="img-fluid rounded w-100 h-100" src="https://placehold.co/600x800/84A98C/FFFFFF?text=Mirissa" style="object-fit: cover;" alt="Mirissa Beach">
+                                    <img class="img-fluid rounded w-100 h-100" src="img/home/mirissa.jpg" style="object-fit: cover;" alt="Mirissa Beach">
                                     <div class="destination-overlay p-4">
                                         <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                         <h4 class="text-white mb-2 mt-3">Mirissa</h4>
@@ -312,7 +305,7 @@
                         <div class="row g-4">
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Kandy" alt="Kandy">
+                                    <img class="img-fluid rounded w-100" src="img/home/kandy.jpeg" alt="Kandy">
                                     <div class="destination-overlay p-4">
                                         <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                         <h4 class="text-white mb-2 mt-3">Kandy</h4>
@@ -325,7 +318,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Anuradhapura" alt="Anuradhapura">
+                                    <img class="img-fluid rounded w-100" src="img/home/anuradhapura.jpg" alt="Anuradhapura">
                                     <div class="destination-overlay p-4">
                                         <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                         <h4 class="text-white mb-2 mt-3">Anuradhapura</h4>
@@ -342,7 +335,7 @@
                         <div class="row g-4">
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Unawatuna" alt="Unawatuna">
+                                    <img class="img-fluid rounded w-100" src="img/home/unawatuna.jpg" alt="Unawatuna">
                                     <div class="destination-overlay p-4">
                                         <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                         <h4 class="text-white mb-2 mt-3">Unawatuna</h4>
@@ -355,7 +348,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Tangalle" alt="Tangalle">
+                                    <img class="img-fluid rounded w-100" src="img/home/Tangalle.jpg" alt="Tangalle">
                                     <div class="destination-overlay p-4">
                                         <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                         <h4 class="text-white mb-2 mt-3">Tangalle</h4>
@@ -372,7 +365,7 @@
                         <div class="row g-4">
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/84A98C/FFFFFF?text=Horton+Plains" alt="Horton Plains">
+                                    <img class="img-fluid rounded w-100" src="img/home/Horton.jpg" alt="Horton Plains">
                                     <div class="destination-overlay p-4">
                                         <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                         <h4 class="text-white mb-2 mt-3">Horton Plains</h4>
@@ -385,7 +378,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="https://placehold.co/600x400/35682D/FFFFFF?text=Yala+National+Park" alt="Yala National Park">
+                                    <img class="img-fluid rounded w-100" src="img/home/yala.jpg" alt="Yala National Park">
                                     <div class="destination-overlay p-4">
                                         <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">View Details</a>
                                         <h4 class="text-white mb-2 mt-3">Yala National Park</h4>
@@ -403,7 +396,7 @@
         </div>
     </div>
 
-    <div class="container-fluid py-5" style="background: linear-gradient(rgba(53, 104, 45, .8), rgba(53, 104, 45, .8)), url('https://placehold.co/1920x400/84A98C/FFFFFF?text=Plan+Your+Trip+CTA') center center no-repeat; background-size: cover;">
+    <div class="container-fluid py-5" style="background: linear-gradient(rgba(53, 104, 45, .8), rgba(53, 104, 45, 0.21)), url('img/home/lanka.jpg') center center no-repeat; background-size: cover;">
         <div class="container text-center py-5">
             <h1 class="text-white mb-4">Start Planning Your Trip to Sri Lanka!</h1>
             <p class="text-white mb-5">Create your personalized itinerary, save your favorite places, and get ready for an unforgettable adventure.</p>
@@ -415,7 +408,7 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <img src="https://placehold.co/600x400/35682D/FFFFFF?text=SOS+Feature" class="img-fluid rounded" alt="SOS Feature">
+                    <img src="img/home/sos1.jpg" class="img-fluid rounded" alt="SOS Feature">
                 </div>
                 <div class="col-lg-6">
                     <h5 class="section-title pe-3">Safety First</h5>

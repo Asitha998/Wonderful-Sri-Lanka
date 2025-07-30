@@ -3,13 +3,13 @@
 $currentPage = basename($_SERVER['PHP_SELF']);
 ?>
 <!-- Topbar Start -->
-<div class="container-fluid bg-primary px-5 d-none d-lg-block">
+<div class="container-fluid bg-dark px-5 d-none d-lg-block">
     <div class="row gx-0">
         <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
 
         </div>
         <div class="col-lg-4 text-center text-lg-end">
-            <div class="d-inline-flex align-items-center" style="height: 45px;">
+            <div class="d-inline-flex align-items-center" style="height: 30px;">
 
                 <?php
                 if ($currentPage == 'login.php') {
