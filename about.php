@@ -1,223 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Wonderful Sri Lanka - Tourism Website</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>About Us - Wonderful Sri Lanka</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
 
-        <!-- Include topbar component -->
-        <?php include 'components/topbar.php'; ?>
+    <?php include 'components/topbar.php'; ?>
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-           <!-- header -->
-           <?php include 'components/header.php'; ?>
+    <div class="container-fluid position-relative p-0">
+        <?php include 'components/header.php'; ?>
+    </div>
+
+    <div class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x600/35682D/FFFFFF?text=Sri+Lanka+Scenery') center center no-repeat; background-size: cover;">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4">About Wonderful Sri Lanka</h3>
+            <p class="text-white mb-0">Our mission to connect travelers with the wonders of our island.</p>
         </div>
-        <!-- Navbar & Hero End -->
+    </div>
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4">About Us</h1>
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-white">About</li>
-                </ol>    
-            </div>
-        </div>
-        <!-- Header End -->
-
-        <!-- About Start -->
-        <div class="container-fluid about py-5">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-5">
-                        <div class="h-100" style="border: 50px solid; border-color: transparent #13357B transparent #13357B;">
-                            <img src="img/about-img.jpg" class="img-fluid w-100 h-100" alt="">
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="h-100" style="border: 50px solid; border-color: transparent var(--bs-primary) transparent var(--bs-primary);">
+                        <img src="https://placehold.co/600x400/84A98C/FFFFFF?text=About+Image" class="img-fluid w-100 h-100" alt="About Image">
+                    </div>
+                </div>
+                <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(https://placehold.co/600x400/F0F2F5/000000?text=Background+Pattern);">
+                    <h5 class="section-title px-3">About Us</h5>
+                    <h1 class="mb-4">Welcome to <span class="text-primary">Wonderful Sri Lanka</span></h1>
+                    <p class="mb-4">
+                        Wonderful Sri Lanka is your ultimate tourism assistance platform designed to make exploring, booking, and discovering the beautiful island of Sri Lanka effortless and enjoyable. We created this platform with a passion for showcasing the unique charm of our country and helping travelers plan their journey easily and safely. Whether you are a first-time tourist, a local adventurer, or planning a trip with family or solo, our platform is tailored to meet all your travel needs.
+                    </p>
+                    <p class="mb-4">
+                        Our goal is to provide a seamless and comprehensive travel planning experience, offering access to essential services, authentic local experiences, and valuable insights into Sri Lanka's rich culture and diverse landscapes. We are committed to promoting sustainable tourism and ensuring every traveler has a memorable and enriching journey.
+                    </p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Experienced Local Guides</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Accommodations</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Reliable Vehicle Rentals</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Diverse Tour Packages</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Customer Support</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Secure Online Booking</p>
                         </div>
                     </div>
-                    <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
-                        <h5 class="section-about-title pe-3">About Us</h5>
-                        <h1 class="mb-4">Welcome to <span class="text-primary">Wonderful Sri Lanka</span></h1>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolorum, doloribus sunt dicta, officia voluptatibus libero necessitatibus natus impedit quam ullam assumenda? Id atque iste consectetur. Commodi odit ab saepe!</p>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quos voluptatem suscipit neque enim, doloribus ipsum rem eos distinctio, dignissimos nisi saepe nulla? Libero numquam perferendis provident placeat molestiae quia?</p>
-                        <div class="row gy-2 gx-4 mb-4">
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
-                            </div>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="services.php">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Mission & Vision Section -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-4 mb-5 justify-content-center">
+                <div class="col-md-6">
+                    <div class="service-item bg-light rounded text-center p-4 shadow">
+                        <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
+                            <i class="fas fa-bullseye fa-2x text-primary"></i> <!-- Changed icon color to text-primary -->
                         </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+                        <h4 class="mb-3 text-primary">Our Mission</h4>
+                        <p class="mb-0">
+                            To promote sustainable and enjoyable tourism in Sri Lanka by offering access to essential services, authentic experiences, and local knowledge.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light rounded text-center p-4 shadow">
+                        <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
+                            <i class="fas fa-eye fa-2x text-primary"></i> <!-- Changed icon color to text-primary -->
+                        </div>
+                        <h4 class="mb-3 text-primary">Our Vision</h4>
+                        <p class="mb-0">
+                            To become the most trusted tourism gateway for discovering the hidden gems of Sri Lanka.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
+    </div>
 
-        <!-- Travel Guide Start -->
-        <div class="container-fluid guide py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                    <h5 class="section-title px-3">Travel Guide</h5>
-                    <h1 class="mb-0">Meet Our Guide</h1>
+    <!-- Key Features Highlight -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Discover More</h5>
+                <h1 class="mb-0">Our Key Features</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-white rounded text-center p-4 shadow-sm">
+                        <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
+                            <i class="fas fa-book-open fa-2x text-primary"></i> <!-- Changed icon color to text-primary -->
+                        </div>
+                        <h5 class="mb-2 text-primary">Real-time Service Booking</h5>
+                        <p class="mb-0">Book guides, vehicles, and accommodations instantly.</p>
+                    </div>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="guide-item">
-                            <div class="guide-img">
-                                <div class="guide-img-efects">
-                                    <img src="img/guide-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                </div>
-                                <div class="guide-icon rounded-pill p-2">
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-white rounded text-center p-4 shadow-sm">
+                        <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
+                            <i class="fas fa-exclamation-triangle fa-2x text-primary"></i> <!-- Changed icon color to text-primary -->
+                        </div>
+                        <h5 class="mb-2 text-primary">Emergency & Safety System</h5>
+                        <p class="mb-0">Access emergency contacts and safety features on the go.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-white rounded text-center p-4 shadow-sm">
+                        <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
+                            <i class="fas fa-language fa-2x text-primary"></i> <!-- Changed icon color to text-primary -->
+                        </div>
+                        <h5 class="mb-2 text-primary">Bilingual Access</h5>
+                        <p class="mb-0">Platform available in both Sinhala and English for wider reach.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-white rounded text-center p-4 shadow-sm">
+                        <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
+                            <i class="fas fa-handshake fa-2x text-primary"></i> <!-- Changed icon color to text-primary -->
+                        </div>
+                        <h5 class="mb-2 text-primary">Trusted Platform Integration</h5>
+                        <p class="mb-0">Seamlessly connect with reliable third-party travel services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-white rounded text-center p-4 shadow-sm">
+                        <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
+                            <i class="fas fa-comments fa-2x text-primary"></i> <!-- Changed icon color to text-primary -->
+                        </div>
+                        <h5 class="mb-2 text-primary">Chatbot/WhatsApp Support</h5>
+                        <p class="mb-0">Get instant assistance and answers through our integrated support.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-white rounded text-center p-4 shadow-sm">
+                        <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
+                            <i class="fas fa-map-marked-alt fa-2x text-primary"></i> <!-- Changed icon color to text-primary -->
+                        </div>
+                        <h5 class="mb-2 text-primary">Detailed Destination Guides</h5>
+                        <p class="mb-0">Comprehensive information on Sri Lanka's top attractions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Meet the Creators Section -->
+    <div class="container-fluid guide py-5"> <!-- Using guide class for consistent styling -->
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Our Team</h5>
+                <h1 class="mb-0">Meet the Creators</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="guide-item">
+                        <div class="guide-img">
+                            <div class="guide-img-efects">
+                                <img src="https://placehold.co/600x400/84A98C/FFFFFF?text=Creator+1" class="img-fluid w-100 rounded-top" alt="Creator 1">
                             </div>
-                            <div class="guide-title text-center rounded-bottom p-4">
-                                <div class="guide-title-inner">
-                                    <h4 class="mt-3">Full Name</h4>
-                                    <p class="mb-0">Designation</p>
-                                </div>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <div class="guide-title-inner">
+                                <h4 class="mt-3">Your Name Here</h4>
+                                <p class="mb-0">Project Lead / Developer</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="guide-item">
-                            <div class="guide-img">
-                                <div class="guide-img-efects">
-                                    <img src="img/guide-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                </div>
-                                <div class="guide-icon rounded-pill p-2">
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="guide-item">
+                        <div class="guide-img">
+                            <div class="guide-img-efects">
+                                <img src="https://placehold.co/600x400/35682D/FFFFFF?text=Creator+2" class="img-fluid w-100 rounded-top" alt="Creator 2">
                             </div>
-                            <div class="guide-title text-center rounded-bottom p-4">
-                                <div class="guide-title-inner">
-                                    <h4 class="mt-3">Full Name</h4>
-                                    <p class="mb-0">Designation</p>
-                                </div>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <div class="guide-title-inner">
+                                <h4 class="mt-3">Team Member Name</h4>
+                                <p class="mb-0">UI/UX Designer</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="guide-item">
-                            <div class="guide-img">
-                                <div class="guide-img-efects">
-                                    <img src="img/guide-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                </div>
-                                <div class="guide-icon rounded-pill p-2">
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="guide-item">
+                        <div class="guide-img">
+                            <div class="guide-img-efects">
+                                <img src="https://placehold.co/600x400/84A98C/FFFFFF?text=Creator+3" class="img-fluid w-100 rounded-top" alt="Creator 3">
                             </div>
-                            <div class="guide-title text-center rounded-bottom p-4">
-                                <div class="guide-title-inner">
-                                    <h4 class="mt-3">Full Name</h4>
-                                    <p class="mb-0">Designation</p>
-                                </div>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="guide-item">
-                            <div class="guide-img">
-                                <div class="guide-img-efects">
-                                    <img src="img/guide-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                </div>
-                                <div class="guide-icon rounded-pill p-2">
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="guide-title text-center rounded-bottom p-4">
-                                <div class="guide-title-inner">
-                                    <h4 class="mt-3">Full Name</h4>
-                                    <p class="mb-0">Designation</p>
-                                </div>
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <div class="guide-title-inner">
+                                <h4 class="mt-3">Team Member Name</h4>
+                                <p class="mb-0">Content Strategist</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="text-center mt-5">
+                <a href="destinations.php" class="btn btn-primary rounded-pill py-3 px-5">Start Exploring</a>
+            </div>
         </div>
-        <!-- Travel Guide End -->
+    </div>
 
-        <!-- footer -->
-        <?php include 'components/footer.php'; ?>
+    <?php include 'components/footer.php'; ?>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
 
 </html>
