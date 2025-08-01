@@ -42,8 +42,8 @@
             <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                    <!-- <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li> -->
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
@@ -55,6 +55,20 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- <div class="carousel-item active">
+                        <video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+                            <source src="video/nature_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h1 class="display-2 text-capitalize text-white mb-4">Discover the Beauty of Sri Lanka</h1>
+                                <p class="mb-5 fs-5">Plan your journey, explore hidden gems, and book trusted services</p>
+                            </div>
+                        </div>
+                    </div> -->
+
                     <div class="carousel-item">
                         <img src="img/home/eliphant.jpg" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
@@ -74,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>

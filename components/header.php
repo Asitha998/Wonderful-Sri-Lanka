@@ -18,6 +18,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             <a href="contact.php" class="nav-item nav-link <?php echo ($currentPage == 'contact.php') ? 'active' : ''; ?>">contact us</a>
 
         </div>
-        <a href="booking.php" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+        <a href="trip-planner.php" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Plan a Trip</a>
     </div>
 </nav>
