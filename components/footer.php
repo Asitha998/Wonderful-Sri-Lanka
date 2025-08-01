@@ -99,11 +99,15 @@
     </div>
 </div>
 
-<!-- chat bot button -->
 <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square floating-btn"
     style="width: 60px; height: 60px;"
     data-bs-toggle="modal" data-bs-target="#chatBotModal">
     <i class="fa fa-comment" style="font-size: 24px;"></i>
+</a>
+
+<a href="contact.php" class="btn btn-danger btn-danger-outline-0 btn-md-square floating-btn2"
+    style="width: 60px; height: 60px;">
+    <i class="fa fa-bell" style="font-size: 24px;"></i>
 </a>
 
 <?php include 'chatbot.php'; ?>

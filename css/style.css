@@ -28,6 +28,17 @@
     z-index: 99;
 }
 
+.floating-btn2 {
+    position: fixed;
+    right: 30px;
+    bottom: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+
 /*** Button Start ***/
 .btn {
     font-weight: 600;

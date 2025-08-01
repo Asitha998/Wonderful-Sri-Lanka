@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,6 +33,7 @@
             border-radius: 15px;
             /* Removed box-shadow */
         }
+
         .profile-sidebar .list-group-item {
             border: none;
             border-radius: 8px;
@@ -36,30 +41,37 @@
             transition: all 0.3s ease;
             color: var(--bs-dark);
         }
+
         .profile-sidebar .list-group-item.active {
             background-color: var(--bs-primary);
             color: var(--bs-white);
         }
+
         .profile-sidebar .list-group-item:hover:not(.active) {
             background-color: var(--bs-gray-200);
             color: var(--bs-primary);
         }
+
         .profile-sidebar .list-group-item i {
             margin-right: 10px;
-            width: 20px; /* Ensure consistent icon alignment */
+            width: 20px;
+            /* Ensure consistent icon alignment */
         }
+
         .profile-content {
             background-color: var(--bs-light);
             padding: 30px;
             border-radius: 15px;
             /* Removed box-shadow */
         }
+
         .profile-content h2 {
             color: var(--bs-primary);
             margin-bottom: 25px;
             border-bottom: 2px solid var(--bs-secondary);
             padding-bottom: 10px;
         }
+
         .profile-overview-img {
             width: 150px;
             height: 150px;
@@ -68,23 +80,33 @@
             border: 5px solid var(--bs-primary);
             margin-bottom: 20px;
         }
-        .booking-card, .destination-card, .listing-card {
+
+        .booking-card,
+        .destination-card,
+        .listing-card {
             background-color: var(--bs-white);
             border-radius: 10px;
             /* Removed box-shadow */
             padding: 20px;
             margin-bottom: 20px;
         }
-        .booking-card h5, .destination-card h5, .listing-card h5 {
+
+        .booking-card h5,
+        .destination-card h5,
+        .listing-card h5 {
             color: var(--bs-primary);
         }
-        .form-floating > .form-control, .form-floating > .form-select {
+
+        .form-floating>.form-control,
+        .form-floating>.form-select {
             height: calc(3.5rem + 2px);
             line-height: 1.25;
         }
-        .form-floating > label {
+
+        .form-floating>label {
             padding: 1rem 0.75rem;
         }
+
         /* Removed .seller-section-toggle and .seller-content as they are no longer needed */
     </style>
 </head>
@@ -137,7 +159,7 @@
                             <a href="#changePassword" class="list-group-item list-group-item-action" data-bs-toggle="tab">
                                 <i class="fas fa-key"></i> Change Password
                             </a>
-                            
+
                             <!-- Separator -->
                             <div class="my-3 border-top"></div>
 
@@ -362,7 +384,7 @@
                     <div class="tab-pane fade" id="vehicleManagement">
                         <h2 class="mb-4">Vehicle Listings Management</h2>
                         <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#addVehicleModal">Add New Vehicle</button>
-                        
+
                         <h4 class="text-primary mb-3">Your Listed Vehicles</h4>
                         <div class="listing-card">
                             <div class="row g-3 align-items-center">
@@ -500,10 +522,10 @@
 
             // Handle sidebar tab switching
             var triggerTabList = [].slice.call(document.querySelectorAll('#sidebarCollapse .list-group-item[data-bs-toggle="tab"]'))
-            triggerTabList.forEach(function (triggerEl) {
+            triggerTabList.forEach(function(triggerEl) {
                 var tabTrigger = new bootstrap.Tab(triggerEl)
 
-                triggerEl.addEventListener('click', function (event) {
+                triggerEl.addEventListener('click', function(event) {
                     event.preventDefault()
                     tabTrigger.show()
                 })

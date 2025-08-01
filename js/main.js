@@ -109,11 +109,12 @@
       },
     },
   });
-
 })(jQuery);
 
-// js
+// login
 
+
+//destination
 function loadDestinations() {
   const cardsContainer = document.getElementById("destination-cards-container");
   const paginationLinksContainer = document.getElementById("pagination-links");
@@ -234,6 +235,6 @@ function loadDestinations() {
     });
   }
 
-  setupPagination(); // Initialize pagination links
-  displayPage(1); // Show the first page on load
+  setupPagination();
+  displayPage(1);
 }

@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION["user_id"])) {
+    header("Location: index.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,36 +27,28 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/auth-styles.css" rel="stylesheet">
 
-    <!-- All styles moved to auth-styles.css -->
 </head>
 
-<body>
+<body onload="loadLogin()">
 
-    <!-- Include topbar component -->
     <?php include 'components/topbar.php'; ?>
 
-    <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
 
-        <!-- header -->
-       
-
     </div>
-    <!-- Navbar End -->
 
     <div class="auth-page-wrapper" id="authPageWrapper">
         <div class="auth-image-panel auth-panel" id="authImagePanel">
-            <!-- Background image set via JavaScript -->
         </div>
         <div class="auth-form-panel-wrapper auth-panel">
             <div class="auth-form-section" id="loginFormSection">
                 <h2>Login to Your Account</h2>
-                <form>
+                <form action="api/loginProcess.php" method="post">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="loginEmail" placeholder="Email Address" required>
+                        <input type="email" name="email" class="form-control" id="loginEmail" placeholder="Email Address" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                        <input type="password" name="password" class="form-control" id="loginPassword" placeholder="Password" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
@@ -65,22 +65,21 @@
                 </div>
             </div>
 
-
-
             <div class="auth-form-section" id="signupFormSection">
                 <h2>Create Your Account</h2>
-                <form>
+
+                <form action="api/signupProcess.php" method="post">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="signupName" placeholder="Full Name" required>
+                        <input type="text" name="signupName" class="form-control" id="signupName" placeholder="Full Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="signupEmail" placeholder="Email Address" required>
+                        <input type="email" name="signupEmail" class="form-control" id="signupEmail" placeholder="Email Address" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
+                        <input type="text" name="signupPhone" class="form-control" maxlength="10" id="signupPhone" placeholder="Phone Number" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                        <input type="password" name="signupPassword" class="form-control" id="signupPassword" placeholder="Password" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Sign Up</button>
                 </form>
@@ -97,56 +96,62 @@
             </div>
         </div>
 
-
     </div>
-
-    <!-- footer -->
-    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
 
+    <script src="js/main.js"></script>
+
+    <script>
         var loginimg = "img/new/loginbkg.jpg";
         var signupimg = "img/new/signupbkg.jpg";
 
         function showSignup() {
-            const authPageWrapper = document.getElementById('authPageWrapper');
-            const authImagePanel = document.getElementById('authImagePanel');
+            const authPageWrapper = document.getElementById("authPageWrapper");
+            const authImagePanel = document.getElementById("authImagePanel");
 
-            authPageWrapper.classList.add('signup-active');
-            authImagePanel.style.backgroundImage = "url('" + signupimg + "')"; // Change image for signup
+            authPageWrapper.classList.add("signup-active");
+            authImagePanel.style.backgroundImage = "url('" + signupimg + "')";
         }
 
         function showLogin() {
-            const authPageWrapper = document.getElementById('authPageWrapper');
-            const authImagePanel = document.getElementById('authImagePanel');
+            const authPageWrapper = document.getElementById("authPageWrapper");
+            const authImagePanel = document.getElementById("authImagePanel");
 
-            authPageWrapper.classList.remove('signup-active');
-            authImagePanel.style.backgroundImage = "url('" + loginimg + "')"; // Change image back for login
+            authPageWrapper.classList.remove("signup-active");
+            authImagePanel.style.backgroundImage = "url('" + loginimg + "')";
         }
 
-        // Initial setup for heights and default login view
-        document.addEventListener('DOMContentLoaded', () => {
+        function loadLogin() {
             let headerHeight = 0;
-            const topbar = document.querySelector('.container-fluid.bg-primary');
-            const navbar = document.querySelector('.container-fluid.position-relative.p-0');
-            const copyright = document.querySelector('.container-fluid.copyright');
+            const topbar = document.querySelector(".container-fluid.bg-primary");
+            const navbar = document.querySelector(
+                ".container-fluid.position-relative.p-0"
+            );
+            const copyright = document.querySelector(".container-fluid.copyright");
 
-            if (topbar && window.getComputedStyle(topbar).display !== 'none') headerHeight += topbar.offsetHeight;
+            if (topbar && window.getComputedStyle(topbar).display !== "none")
+                headerHeight += topbar.offsetHeight;
             if (navbar) headerHeight += navbar.offsetHeight;
 
             let footerHeight = 0;
             if (copyright) footerHeight += copyright.offsetHeight;
 
-            document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
-            document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
+            document.documentElement.style.setProperty(
+                "--header-height",
+                `${headerHeight}px`
+            );
+            document.documentElement.style.setProperty(
+                "--footer-height",
+                `${footerHeight}px`
+            );
 
-            // Set initial background image for login
-            const authImagePanel = document.getElementById('authImagePanel');
+            const authImagePanel = document.getElementById("authImagePanel");
             authImagePanel.style.backgroundImage = "url('" + loginimg + "')";
-        });
+        }
     </script>
+
 </body>
 
 </html>
