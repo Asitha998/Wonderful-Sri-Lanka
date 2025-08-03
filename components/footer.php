@@ -105,7 +105,7 @@
     <i class="fa fa-comment" style="font-size: 24px;"></i>
 </a>
 
-<a href="contact.php" class="btn btn-danger btn-danger-outline-0 btn-md-square floating-btn2"
+<a href="contact.php#emergencyServices" class="btn btn-danger btn-danger-outline-0 btn-md-square floating-btn2"
     style="width: 60px; height: 60px;">
     <i class="fa fa-bell" style="font-size: 24px;"></i>
 </a>

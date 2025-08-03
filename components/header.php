@@ -12,7 +12,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
             <a href="index.php" class="nav-item nav-link <?php echo ($currentPage == 'index.php') ? 'active' : ''; ?>">Home</a>
-            <a href="destination.php" class="nav-item nav-link <?php echo ($currentPage == 'destination.php') ? 'active' : ''; ?>">Destinations</a>
+            <a href="destination.php" class="nav-item nav-link <?php echo ($currentPage == 'destination.php') ? 'active' : ''; ?>">Discover</a>
             <a href="services.php" class="nav-item nav-link <?php echo ($currentPage == 'services.php') ? 'active' : ''; ?>">services</a>
             <a href="about.php" class="nav-item nav-link <?php echo ($currentPage == 'about.php') ? 'active' : ''; ?>">About</a>
             <a href="contact.php" class="nav-item nav-link <?php echo ($currentPage == 'contact.php') ? 'active' : ''; ?>">contact us</a>

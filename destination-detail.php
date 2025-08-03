@@ -1,6 +1,83 @@
 <?php
+require "api/connection.php";
 session_start();
+
+$type = $_GET["type"] ?? null;
+$id = intval($_GET["id"] ?? 0);
+
+if (!$type || !$id) {
+    header("Location: destinations.php");
+    exit;
+}
+
+switch ($type) {
+    case "discover":
+        $detailQuery = "
+            SELECT d.*, dc.name AS category, p.name AS province
+            FROM discover d
+            JOIN discover_category dc ON d.discover_category_id = dc.id
+            JOIN province p ON d.province_id = p.id
+            WHERE d.id = $id
+        ";
+        $mediaQuery = "SELECT * FROM media WHERE discover_id = $id";
+        $highlightQuery = "SELECT * FROM highlights WHERE discover_id = $id";
+        $accQuery = "SELECT * FROM accommodations WHERE discover_id = $id";
+        $reviewQuery = "SELECT * FROM reviews WHERE discover_id = $id";
+        break;
+
+    case "vehicle":
+        $detailQuery = "
+            SELECT v.*, vt.name AS vehicle_type
+            FROM vehicles v
+            JOIN vehicle_type vt ON v.vehicle_type_id = vt.id
+            WHERE v.id = $id
+        ";
+        $mediaQuery = "SELECT * FROM media WHERE vehicles_id = $id";
+        $highlightQuery = "SELECT * FROM highlights WHERE vehicles_id = $id";
+        $accQuery = null;
+        $reviewQuery = null;
+        break;
+
+    case "guide":
+        $detailQuery = "
+            SELECT * FROM guides
+            WHERE id = $id
+        ";
+        $mediaQuery = "SELECT * FROM media WHERE guides_id = $id";
+        $highlightQuery = "SELECT * FROM highlights WHERE guides_id = $id";
+        $accQuery = null;
+        $reviewQuery = null;
+        break;
+
+    default:
+        header("Location: destinations.php");
+        exit;
+}
+
+$detailResult = Database::search($detailQuery);
+if ($detailResult->num_rows === 0) {
+    echo ucfirst($type) . " not found.";
+    exit;
+}
+$detail = $detailResult->fetch_assoc();
+
+$firstMediaResult = Database::search($mediaQuery);
+$first_img = $firstMediaResult->fetch_assoc();
+
+$allMediaResult = Database::search($mediaQuery);
+
+$highlightResult = Database::search($highlightQuery);
+
+if ($accQuery) {
+    $accResult = Database::search($accQuery);
+}
+if ($reviewQuery) {
+    $reviewResult = Database::search($reviewQuery);
+}
+
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -129,11 +206,11 @@ session_start();
 
 <body>
 
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div>
+    </div> -->
 
     <?php include 'components/topbar.php'; ?>
 
@@ -207,10 +284,18 @@ session_start();
     ];
     ?>
 
-    <div class="hero-destination-detail" style="background-image: url('<?php echo $current_destination['hero_image']; ?>');">
+    <div class="hero-destination-detail" style="background-image: url('<?php echo $first_img['url']; ?>');">
         <div class="container">
-            <h1 class="display-1 text-white mb-3"><?php echo $current_destination['name']; ?></h1>
-            <p class="fs-4 text-white-50"><?php echo $current_destination['subtitle']; ?></p>
+            <h1 class="display-1 text-white mb-3"><?= $detail["name"] ?? $detail["model"] ?? $detail["guide_name"] ?></h1>
+            <p class="fs-3 text-white-50">
+                <?php if ($type === "discover"): ?>
+                    Category: <?= $detail["category"] ?> | Province: <?= $detail["province"] ?>
+                <?php elseif ($type === "vehicle"): ?>
+                    Type: <?= $detail["vehicle_type"] ?> | Price: Rs. <?= $detail["price_per_day"] ?>/day
+                <?php elseif ($type === "guide"): ?>
+                    Rank: 3rd out of 100 | Experience: <?= $detail["experience_years"] ?> years
+                <?php endif; ?>
+            </p>
         </div>
     </div>
 
@@ -218,36 +303,40 @@ session_start();
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-8">
-                    <h2 class="text-primary mb-4">About <?php echo $current_destination['name']; ?></h2>
-                    <p class="mb-4"><?php echo nl2br($current_destination['description']); ?></p>
+                    <h2 class="text-primary mb-4">About <?= $detail["name"] ?? $detail["model"] ?? $detail["guide_name"] ?></h2>
+                    <p class="mb-4"><?php echo nl2br($detail['description']); ?></p>
 
                     <h3 class="text-primary mt-5 mb-4">Image Gallery</h3>
                     <div class="row g-4">
-                        <?php foreach ($current_destination['gallery_images'] as $img_src): ?>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="gallery-item">
-                                    <img class="img-fluid rounded w-100" src="<?php echo $img_src; ?>" alt="<?php echo $current_destination['name']; ?> Gallery Image">
+                        <?php if ($mediaQuery) {
+                            while ($img = $allMediaResult->fetch_assoc()): ?>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="gallery-item">
+                                        <img class="img-fluid rounded w-100" src="<?php echo $img["url"]; ?>" alt="<?php echo $destination['name']; ?> Gallery Image">
+                                    </div>
                                 </div>
-                            </div>
-                        <?php endforeach; ?>
+                        <?php endwhile;
+                        } ?>
                     </div>
 
-                    <h3 class="text-primary mt-5 mb-4">Location Map</h3>
-                    <div class="map-container">
-                        <?php echo $current_destination['map_embed']; ?>
-                    </div>
+                    <?php if ($type === "discover"): ?>
+                        <h3 class="text-primary mt-5 mb-4">Location Map</h3>
+                        <div class="map-container">
+                            <?php echo $current_destination['map_embed']; ?>
+                        </div>
+                    <?php endif; ?>
 
                     <h3 class="text-primary mt-5 mb-4">Travel Tips & Highlights</h3>
                     <ul class="travel-tips-list">
-                        <?php foreach ($current_destination['tips'] as $tip): ?>
-                            <li><i class="fas <?php echo $tip['icon']; ?>"></i> <?php echo $tip['text']; ?></li>
-                        <?php endforeach; ?>
+                        <?php while ($highlight = $highlightResult->fetch_assoc()): ?>
+                            <li><i class="fas fa-info-circle"></i> <?php echo $highlight['description']; ?></li>
+                        <?php endwhile; ?>
                     </ul>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="booking-options-box">
-                        <h4 class="mb-4">Plan Your Visit</h4>
+                        <h4 class="mb-4">Plan Your Trip</h4>
                         <div class="rating-stars mb-3">
                             <?php
                             $full_stars = floor($current_destination['rating']);
@@ -259,19 +348,39 @@ session_start();
                                 echo '<i class="fas fa-star-half-alt"></i>';
                             }
                             for ($i = 0; $i < (5 - ceil($current_destination['rating'])); $i++) {
-                                echo '<i class="far fa-star"></i>'; // Empty star
+                                echo '<i class="far fa-star"></i>';
                             }
                             ?>
+
                             <span class="text-muted ms-2">(<?php echo $current_destination['rating']; ?> / 5.0) - <?php echo $current_destination['reviews_count']; ?> Reviews</span>
                         </div>
-                        <p class="text-dark mb-3">Available Services:</p>
+                        <p class="text-dark mb-3">Details</p>
                         <ul class="list-unstyled mb-4">
-                            <?php foreach ($current_destination['services'] as $service): ?>
-                                <li class="text-primary"><i class="fas fa-check-circle me-2"></i><?php echo $service; ?></li>
-                            <?php endforeach; ?>
+                            <?php if ($type === "discover"):
+                                foreach ($current_destination['services'] as $service): ?>
+                                    <li class="text-primary"><i class="fas fa-check-circle me-2"></i><?php echo $service; ?></li>
+                                <?php endforeach; ?>
+                            <?php elseif ($type === "vehicle"): ?>
+                                <li class="text-primary"><i class="fas fa-check-circle me-2"></i>Driver name: &nbsp;<?php echo $detail["driver_name"]; ?></li>
+                                <li class="text-primary"><i class="fas fa-check-circle me-2"></i>Driver contact: &nbsp;<?php echo $detail["driver_mobile"]; ?></li>
+                                <li class="text-primary"><i class="fas fa-check-circle me-2"></i>Vehicle number: &nbsp;<?php echo $detail["number_plate"]; ?></li>
+                                <br>
+                                <li class="text-primary"><i class="fas fa-check-circle me-2"></i>Price per day: &nbsp;Rs.<?php echo $detail["price_per_day"]; ?></li>
+                                <br>
+                                <li class="text-danger"><i class="fas fa-check-circle me-2"></i>Availability: &nbsp;<?= $detail["next_available_date"] === null ? "Available" : "Available after: " . $detail["next_available_date"] ?></li>
+                            <?php elseif ($type === "guide"): ?>
+                                <li class="text-primary"><i class="fas fa-check-circle me-2"></i>Guide contact: &nbsp;<?php echo $detail["guide_mobile"]; ?></li>
+                                <li class="text-primary"><i class="fas fa-check-circle me-2"></i>Guide languages: &nbsp;<?php echo $detail["languages"]; ?></li>
+                                <li class="text-primary"><i class="fas fa-check-circle me-2"></i>Guide experience: &nbsp;<?php echo $detail["experience_years"]; ?> years</li>
+                                <br>
+                                <li class="text-primary"><i class="fas fa-check-circle me-2"></i>Price per day: &nbsp;Rs.<?php echo $detail["price_per_day"]; ?></li>
+                                <br>
+                                <li class="text-danger"><i class="fas fa-check-circle me-2"></i>Availability: &nbsp;<?= $detail["next_available_date"] === null ? "Available" : "Available after: " . $detail["next_available_date"] ?></li>
+                            <?php endif; ?>
+
                         </ul>
-                        <a href="booking.php" class="btn btn-primary rounded-pill py-3 px-5 mb-3">Book a Guide</a>
-                        <a href="#" class="btn btn-secondary rounded-pill py-3 px-5 mb-3">Reserve a Vehicle</a>
+                        <!-- <a href="booking.php" class="btn btn-primary rounded-pill py-3 px-5 mb-3">Book a Guide</a>
+                        <a href="#" class="btn btn-secondary rounded-pill py-3 px-5 mb-3">Reserve a Vehicle</a> -->
                         <a href="#" class="btn btn-outline-primary rounded-pill py-3 px-5">Add to Trip Planner</a>
                     </div>
                 </div>
@@ -306,6 +415,7 @@ session_start();
 
         </div>
     </div>
+
 
     <?php include 'components/footer.php'; ?>
 

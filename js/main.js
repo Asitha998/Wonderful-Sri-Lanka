@@ -113,14 +113,17 @@
 
 // login
 
-
-//destination
-function loadDestinations() {
-  const cardsContainer = document.getElementById("destination-cards-container");
-  const paginationLinksContainer = document.getElementById("pagination-links");
-  const destinationCards = Array.from(
-    cardsContainer.getElementsByClassName("destination-card")
+//discover
+function setupPagination(cardsContainerId, paginationLinksContainerId) {
+  const cardsContainer = document.getElementById(cardsContainerId);
+  const paginationLinksContainer = document.getElementById(
+    paginationLinksContainerId
   );
+  if (!cardsContainer || !paginationLinksContainer) {
+    console.error("Pagination containers not found for ID:", cardsContainerId);
+    return;
+  }
+  const destinationCards = Array.from(cardsContainer.children);
   const cardsPerPage = 9;
   let currentPage = 1;
 
@@ -140,7 +143,7 @@ function loadDestinations() {
     updatePaginationLinks();
   }
 
-  function setupPagination() {
+  function updatePaginationLinks() {
     paginationLinksContainer.innerHTML = ""; // Clear existing links
     const totalPages = Math.ceil(destinationCards.length / cardsPerPage);
 
@@ -149,7 +152,7 @@ function loadDestinations() {
     prevLink.href = "#";
     prevLink.classList.add(
       "btn",
-      "btn-primary",
+      "btn-success",
       "rounded-pill",
       "py-2",
       "px-3",
@@ -169,7 +172,7 @@ function loadDestinations() {
       link.href = "#";
       link.classList.add(
         "btn",
-        "btn-primary",
+        "btn-success",
         "rounded-pill",
         "py-2",
         "px-3",
@@ -188,7 +191,7 @@ function loadDestinations() {
     nextLink.href = "#";
     nextLink.classList.add(
       "btn",
-      "btn-primary",
+      "btn-success",
       "rounded-pill",
       "py-2",
       "px-3",
@@ -203,15 +206,9 @@ function loadDestinations() {
     });
     paginationLinksContainer.appendChild(nextLink);
 
-    updatePaginationLinks();
-  }
-
-  function updatePaginationLinks() {
     const links = paginationLinksContainer.getElementsByTagName("a");
-    const totalPages = Math.ceil(destinationCards.length / cardsPerPage);
-
     Array.from(links).forEach((link, index) => {
-      // Handle previous/next buttons
+
       if (link.textContent.includes("Previous")) {
         if (currentPage === 1) {
           link.classList.add("disabled");
@@ -235,6 +232,18 @@ function loadDestinations() {
     });
   }
 
-  setupPagination();
   displayPage(1);
 }
+
+function loadDestinations() {
+  setupPagination("destination-card-container", "discover-pagination-links");
+}
+
+function loadVehicles() {
+  setupPagination("vehicle-cards-container", "vehicle-pagination-links");
+}
+
+function loadGuides() {
+  setupPagination("guide-cards-container", "guide-pagination-links");
+}
+

@@ -61,9 +61,9 @@ session_start();
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-users fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Tour Guide Booking</h4>
-                        <p class="mb-0">Hire experienced local guides to enrich your travel experience.</p>
-                        <a href="booking.php?service=guide" class="btn btn-primary btn-sm mt-3">Book Now</a>
+                        <h4 class="mb-3 text-white">Tour Guide Booking</h4>
+                        <p class="mb-0 text-white">Hire experienced local guides to enrich your travel experience.</p>
+                        <a href="destination.php#guide-section" class="btn btn-success btn-sm mt-3">Book Now</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -71,9 +71,9 @@ session_start();
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-car fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Vehicle Rentals</h4>
-                        <p class="mb-0">Choose from tuk-tuks, cars, or vans with/without drivers.</p>
-                        <a href="booking.php?service=vehicle" class="btn btn-primary btn-sm mt-3">Book Now</a>
+                        <h4 class="mb-3 text-white">Vehicle Rentals</h4>
+                        <p class="mb-0 text-white">Choose from tuk-tuks, cars, or vans with/without drivers.</p>
+                        <a href="destination.php#vehicle-section" class="btn btn-success btn-sm mt-3">Book Now</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -81,9 +81,9 @@ session_start();
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-hotel fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Accommodation Finder</h4>
-                        <p class="mb-0">Find and book guest houses, hotels, and eco lodges.</p>
-                        <a href="booking.php?service=accommodation" class="btn btn-primary btn-sm mt-3">Book Now</a>
+                        <h4 class="mb-3 text-white">Accommodation Finder</h4>
+                        <p class="mb-0 text-white">Find and book guest houses, hotels, and eco lodges.</p>
+                        <a href="destination.php#discover-section" class="btn btn-success btn-sm mt-3">Find</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -91,9 +91,9 @@ session_start();
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-mountain fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Attractions</h4>
-                        <p class="mb-0">Discover historical sites, nature parks, and beautiful landscapes.</p>
-                        <a href="destination.php" class="btn btn-primary btn-sm mt-3">View Attractions</a>
+                        <h4 class="mb-3 text-white">Attractions</h4>
+                        <p class="mb-0 text-white">Discover historical sites, nature parks, and beautiful landscapes.</p>
+                        <a href="destination.php" class="btn btn-success btn-sm mt-3">View Attractions</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -101,9 +101,9 @@ session_start();
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-utensils fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Food Services</h4>
-                        <p class="mb-0">Explore local food, home-cooked experiences, and street food tours.</p>
-                        <a href="#" class="btn btn-primary btn-sm mt-3">Explore Food</a>
+                        <h4 class="mb-3 text-white">Food Services</h4>
+                        <p class="mb-0 text-white">Explore local food, home-cooked experiences, and street food tours.</p>
+                        <a href="destination.php" class="btn btn-success btn-sm mt-3">Explore Food</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -111,9 +111,9 @@ session_start();
                         <div class="service-icon d-flex align-items-center justify-content-center mx-auto mb-4">
                             <i class="fa fa-suitcase-rolling fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Travel Agent Support</h4>
-                        <p class="mb-0">Get assistance with custom travel planning and package deals.</p>
-                        <a href="contact.php" class="btn btn-primary btn-sm mt-3">Contact Agent</a>
+                        <h4 class="mb-3 text-white">Travel Agent Support</h4>
+                        <p class="mb-0 text-white">Get assistance with custom travel planning and package deals.</p>
+                        <a href="contact.php" class="btn btn-success btn-sm mt-3">Contact Agent</a>
                     </div>
                 </div>
             </div>

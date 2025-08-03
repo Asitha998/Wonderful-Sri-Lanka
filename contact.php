@@ -121,7 +121,7 @@ session_start();
     </div>
     <!-- Contact End -->
     <!-- Emergency Services Section -->
-    <div class="container-fluid py-5 bg-light">
+    <div class="container-fluid py-5 bg-light" id="emergencyServices">
         <div class="container py-5">
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                 <h5 class="section-title px-3">Stay Safe</h5>
