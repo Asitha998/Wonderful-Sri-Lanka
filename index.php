@@ -15,7 +15,7 @@ session_start();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
-
+ <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -50,21 +50,8 @@ session_start();
                     <li data-bs-target="#carouselId" data-bs-slide-to="2"></li> -->
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="img/home/Sigiriya.jpg" class="img-fluid" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h1 class="display-2 text-capitalize text-white mb-4">Discover the Beauty of Sri Lanka</h1>
-                                <p class="mb-5 fs-5">Plan your journey, explore hidden gems, and book trusted services</p>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- <div class="carousel-item active">
-                        <video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
-                            <source src="video/nature_video.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img src="img/home/Sigiriya.jpg" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="p-3" style="max-width: 900px;">
                                 <h1 class="display-2 text-capitalize text-white mb-4">Discover the Beauty of Sri Lanka</h1>
@@ -73,7 +60,20 @@ session_start();
                         </div>
                     </div> -->
 
-                    <div class="carousel-item">
+                    <div class="carousel-item active">
+                        <video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+                            <source src="video/n2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h1 class="display-2 text-capitalize text-white mb-4">Discover the Beauty of Sri Lanka</h1>
+                                <p class="mb-5 fs-5">Plan your journey, explore hidden gems, and book trusted services</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="carousel-item">
                         <img src="img/home/eliphant.jpg" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="p-3" style="max-width: 900px;">
@@ -90,7 +90,7 @@ session_start();
                                 <p class="mb-5 fs-5">From expert guides to comfortable stays, everything you need in one place</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>

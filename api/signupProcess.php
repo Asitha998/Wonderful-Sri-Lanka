@@ -13,6 +13,7 @@ if ($rs->num_rows > 0) {
 }
 
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
 $role_rs = Database::search("SELECT id FROM roles WHERE name='user'");
 $role_id = $role_rs->fetch_assoc()["id"];
 

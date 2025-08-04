@@ -117,6 +117,8 @@ $guideResults = Database::search($guideQuery);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="img/logo.png">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -221,6 +223,7 @@ $guideResults = Database::search($guideQuery);
     <!-- Services Section Start -->
     <div class="container-fluid destination py-5">
         <div class="container py-5">
+            
             <!-- Vehicles Subsection -->
             <div class="mx-auto text-center mb-5" style="max-width: 900px;" id="vehicle-section">
                 <h5 class="section-title px-3">Services</h5>

@@ -18,7 +18,7 @@ session_start();
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+ <link rel="icon" href="img/logo.png">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
@@ -31,7 +31,6 @@ session_start();
             background-color: var(--bs-light);
             padding: 20px;
             border-radius: 15px;
-            /* Removed box-shadow */
         }
 
         .profile-sidebar .list-group-item {
@@ -55,14 +54,12 @@ session_start();
         .profile-sidebar .list-group-item i {
             margin-right: 10px;
             width: 20px;
-            /* Ensure consistent icon alignment */
         }
 
         .profile-content {
             background-color: var(--bs-light);
             padding: 30px;
             border-radius: 15px;
-            /* Removed box-shadow */
         }
 
         .profile-content h2 {
@@ -86,7 +83,6 @@ session_start();
         .listing-card {
             background-color: var(--bs-white);
             border-radius: 10px;
-            /* Removed box-shadow */
             padding: 20px;
             margin-bottom: 20px;
         }
@@ -107,7 +103,6 @@ session_start();
             padding: 1rem 0.75rem;
         }
 
-        /* Removed .seller-section-toggle and .seller-content as they are no longer needed */
     </style>
 </head>
 

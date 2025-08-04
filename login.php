@@ -19,7 +19,7 @@ if (isset($_SESSION["user_id"])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
-
+ <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -43,6 +43,7 @@ if (isset($_SESSION["user_id"])) {
         <div class="auth-form-panel-wrapper auth-panel">
             <div class="auth-form-section" id="loginFormSection">
                 <h2>Login to Your Account</h2>
+
                 <form action="api/loginProcess.php" method="post">
                     <div class="form-group">
                         <input type="email" name="email" class="form-control" id="loginEmail" placeholder="Email Address" required>
@@ -83,6 +84,7 @@ if (isset($_SESSION["user_id"])) {
                     </div>
                     <button type="submit" class="btn btn-primary">Sign Up</button>
                 </form>
+
                 <a href="#" class="toggle-link" onclick="showLogin()">Already have an account? Login</a>
                 <div class="google-auth-container">
                     <div class="divider">
